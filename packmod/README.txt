@@ -24,13 +24,10 @@ Last updated: 2020-05-15
 		DO NOT surround it with quotes, otherwise packmod.cmd will not work, because packmod.cmd surrounds the install path with quotes itself when it runs.
 
 5.	Put any filenames you do not want included in the .pak file into .ignore (right click and select Edit).
-
-[
-	If you want packmod.cmd to ignore any file with a certain extension, you can do this by adding .[extension]\ to .ignore.
-	Note that this is not a perfect solution and may cause files to be ignored that you do not want to be. For example, adding .cs\ to .ignore would cause files named File.css or
-	File.cs.txt to be ignored as well as ones with the extension .cs. Use this shortcut at your own risk. If files are missing from in-game after running packmod.cmd and you used
-	this shortcut, check for file names that might be accidentally getting ignored. If this is the case, unfortunately the fix is to add every file with the extension individually.
-]
+		If you want packmod.cmd to ignore any file with a certain extension, you can do this by adding .[extension]\ to .ignore.
+		Note that this is not a perfect solution and may cause files to be ignored that you do not want to be. For example, adding .cs\ to .ignore would cause files named File.css or
+		File.cs.txt to be ignored as well as ones with the extension .cs. Use this shortcut at your own risk. If files are missing from in-game after running packmod.cmd and you used
+		this shortcut, check for file names that might be accidentally getting ignored. If this is the case, unfortunately the fix is to add every file with the extension individually.
 
 6.	Repeat step 5 as needed.
 
@@ -38,7 +35,7 @@ Last updated: 2020-05-15
 |   USE   |
 -----------
 To use packmod.cmd, just drag your mod folder onto it. As long as you have set everything up correctly, your mod will be packed directly into your Starbound\mods folder for testing
-and into a folder named 'packed' in the same folder as packmod.cmd for easy distribution.
+and into a folder named 'packed' in your MyStarboundMods folder for easy distribution.
 For example, if your source files are in MyStarboundMods\ModName, packmod.cmd will save ModName.pak to both [installpath]\mods and MyStarboundMods\packed.
 
 -----------
@@ -50,3 +47,5 @@ The folder will still exist until the command window is closed in case you wish 
 
 If you do not want the command window to stay open, edit packmod.cmd and remove the last line [pause].
 This will cause packmod.cmd to automatically close on completion.
+
+For convenience, consider adding shortcuts to [installpath] and starbound.exe to your MyStarboundMods folder.
