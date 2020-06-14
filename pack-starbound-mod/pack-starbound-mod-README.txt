@@ -1,10 +1,12 @@
 -----------
 |  ABOUT  |
 -----------
-pack-starbound-mod.cmd automates the process of packing a Starbound mod for use in-game.
+Version: 1.1.0
+Last updated: 2020-06-14
+
+pack[-and-install]-starbound-mod.cmd automates the process of packing a Starbound mod for use in-game.
 It copies all files except for those in the pack-starbound-mod.ignore file to a temporary folder and creates a .pak file with asset_packer.exe, which is included with Starbound's game files.
 
-Last updated: 2020-06-14
 
 -----------
 |  SETUP  |

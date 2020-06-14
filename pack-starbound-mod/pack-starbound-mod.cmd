@@ -1,6 +1,7 @@
 @echo off
+REM version: 1.1.0
+
 for %%f in (%1) do set foldername=%%~nxf
-echo %foldername%
 set /p installpath=<pack-starbound-mod.installpath
 echo Copying %foldername% mod files for packing...
 RD /s /q "packed\%foldername%\"
